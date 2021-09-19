@@ -58,10 +58,13 @@ struct ContentView: View {
                 }
                 
                 RatingControl(maxRating: maxRating, currentRating: $currentRating, size: Int(size), color: color, ratingImage: ratingImage)
-                    .padding()
+                    .padding([.top])
                 
                 Text("Current Rating: \(currentRating)")
+                    .padding()
             }
+            
+            Spacer()
         }
     }
 }
