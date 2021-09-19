@@ -16,13 +16,13 @@ public enum RatingImage: String, CaseIterable, Identifiable {
     var fillImage: Image {
         rawValue.prefix(3) == "SF_" ?
             Image(systemName: String(rawValue.dropFirst(3)) + ".fill") :
-            Image("\(rawValue).fill")
+            Image("\(rawValue).fill", bundle: .module)
     }
     
     var openImage: Image {
         rawValue.prefix(3) == "SF_" ?
             Image(systemName: String(rawValue.dropFirst(3))) :
-            Image(rawValue)
+            Image(rawValue, bundle: .module)
     }
     
     public var id: String {
