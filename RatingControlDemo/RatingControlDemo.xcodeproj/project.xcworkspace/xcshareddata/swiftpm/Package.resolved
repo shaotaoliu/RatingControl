@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RatingControl",
+        "repositoryURL": "https://github.com/shaotaoliu/RatingControl",
+        "state": {
+          "branch": "main",
+          "revision": "387462e273cae02a5a27f5a3920b240398850d8d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

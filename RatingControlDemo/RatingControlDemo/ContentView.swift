@@ -1,4 +1,5 @@
 import SwiftUI
+import RatingControl
 
 struct ContentView: View {
     

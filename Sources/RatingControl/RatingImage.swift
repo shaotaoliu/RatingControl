@@ -1,6 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
+@available(macOS 11.0, *)
 public enum RatingImage: String, CaseIterable, Identifiable {
     case star = "SF_star"
     case heart = "SF_heart"

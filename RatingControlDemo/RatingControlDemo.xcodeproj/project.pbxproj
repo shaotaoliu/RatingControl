@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		4AD7D92C26F6F1C0009E5A13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7D92B26F6F1C0009E5A13 /* ContentView.swift */; };
 		4AD7D92E26F6F1C4009E5A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7D92D26F6F1C4009E5A13 /* Assets.xcassets */; };
 		4AD7D93126F6F1C4009E5A13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7D93026F6F1C4009E5A13 /* Preview Assets.xcassets */; };
+		4AD7D93A26F6F568009E5A13 /* RatingControl in Frameworks */ = {isa = PBXBuildFile; productRef = 4AD7D93926F6F568009E5A13 /* RatingControl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD7D93A26F6F568009E5A13 /* RatingControl in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = RatingControlDemo;
+			packageProductDependencies = (
+				4AD7D93926F6F568009E5A13 /* RatingControl */,
+			);
 			productName = RatingControlDemo;
 			productReference = 4AD7D92626F6F1C0009E5A13 /* RatingControlDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 4AD7D91D26F6F1C0009E5A13;
+			packageReferences = (
+				4AD7D93826F6F568009E5A13 /* XCRemoteSwiftPackageReference "RatingControl" */,
+			);
 			productRefGroup = 4AD7D92726F6F1C0009E5A13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AD7D93826F6F568009E5A13 /* XCRemoteSwiftPackageReference "RatingControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shaotaoliu/RatingControl";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AD7D93926F6F568009E5A13 /* RatingControl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AD7D93826F6F568009E5A13 /* XCRemoteSwiftPackageReference "RatingControl" */;
+			productName = RatingControl;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4AD7D91E26F6F1C0009E5A13 /* Project object */;
 }

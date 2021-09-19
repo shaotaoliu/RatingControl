@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(macOS 11.0, *)
 @available(iOS 13.0, *)
 public struct RatingControl: View {
 
@@ -42,5 +43,13 @@ public struct RatingControl: View {
             }
         }
         .frame(width: CGFloat(maxRating * size))
+    }
+}
+
+@available(macOS 11.0, *)
+@available(iOS 13.0, *)
+struct RatingControl_Previews: PreviewProvider {
+    static var previews: some View {
+        RatingControl(maxRating: 5, currentRating: .constant(3))
     }
 }
