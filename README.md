@@ -13,6 +13,7 @@
                 color: Color = .yellow,
                 ratingImage: RatingImage = .star)
  
- The Demo View shows how to use it.
+ The Rating Control source code is from some Youtuber (I cannot find the link)
+ I created a demo which shows how to use it.
  
  ![image](https://user-images.githubusercontent.com/15805568/137278167-8cd5fbe3-400d-43e4-a832-00eeab2b7ed5.png)
