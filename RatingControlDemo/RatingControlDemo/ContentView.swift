@@ -11,11 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Rating Control Demo")
-                    .font(.title)
-                    .bold()
-                
+            VStack{
                 Form {
                     Stepper(value: $maxRating, in: 3...10, onEditingChanged: { result in
                         if currentRating > maxRating {
@@ -50,8 +46,8 @@ struct ContentView: View {
                                minimumValueLabel: Text("20"),
                                maximumValueLabel: Text("80"),
                                label: {
-                                Text("Size")
-                               })
+                            Text("Size")
+                        })
                     }
                     
                     ColorPicker("Color", selection: $color)
@@ -63,8 +59,7 @@ struct ContentView: View {
                 Text("Current Rating: \(currentRating)")
                     .padding()
             }
-            
-            Spacer()
+            .navigationTitle("Rating Control Demo")
         }
     }
 }
